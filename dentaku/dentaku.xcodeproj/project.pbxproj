@@ -12,9 +12,11 @@
 		2F18BB9C21F011CD00BBC287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F18BB9A21F011CD00BBC287 /* Main.storyboard */; };
 		2F18BB9E21F011D800BBC287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F18BB9D21F011D800BBC287 /* Assets.xcassets */; };
 		2F18BBA121F011D800BBC287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F18BB9F21F011D800BBC287 /* LaunchScreen.storyboard */; };
+		518EF665F05C9D86D6F932E4 /* Pods_dentaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8D9B681E094AF5AE50BE48 /* Pods_dentaku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E6561AE07A24BB0886A111 /* Pods-dentaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dentaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-dentaku/Pods-dentaku.release.xcconfig"; sourceTree = "<group>"; };
 		2F18BB9321F011CD00BBC287 /* dentaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F18BB9621F011CD00BBC287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F18BB9821F011CD00BBC287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		2F18BB9D21F011D800BBC287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F18BBA021F011D800BBC287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F18BBA221F011D800BBC287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D7BC4110925AF98F12A058 /* Pods-dentaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dentaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dentaku/Pods-dentaku.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8D9B681E094AF5AE50BE48 /* Pods_dentaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dentaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518EF665F05C9D86D6F932E4 /* Pods_dentaku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2F18BB9521F011CD00BBC287 /* dentaku */,
 				2F18BB9421F011CD00BBC287 /* Products */,
+				93309FB3C477F55EC9AAD173 /* Pods */,
+				E23FAFF16E31EA48AF66282F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = dentaku;
 			sourceTree = "<group>";
 		};
+		93309FB3C477F55EC9AAD173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67D7BC4110925AF98F12A058 /* Pods-dentaku.debug.xcconfig */,
+				15E6561AE07A24BB0886A111 /* Pods-dentaku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E23FAFF16E31EA48AF66282F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8D9B681E094AF5AE50BE48 /* Pods_dentaku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F18BBA521F011D800BBC287 /* Build configuration list for PBXNativeTarget "dentaku" */;
 			buildPhases = (
+				8B79AB3824F3D0E40B54E71B /* [CP] Check Pods Manifest.lock */,
 				2F18BB8F21F011CC00BBC287 /* Sources */,
 				2F18BB9021F011CC00BBC287 /* Frameworks */,
 				2F18BB9121F011CC00BBC287 /* Resources */,
+				E353837E6CA85BC0B441C00C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B79AB3824F3D0E40B54E71B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dentaku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E353837E6CA85BC0B441C00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-dentaku/Pods-dentaku-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dentaku/Pods-dentaku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F18BB8F21F011CC00BBC287 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		2F18BBA621F011D800BBC287 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D7BC4110925AF98F12A058 /* Pods-dentaku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		2F18BBA721F011D800BBC287 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E6561AE07A24BB0886A111 /* Pods-dentaku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

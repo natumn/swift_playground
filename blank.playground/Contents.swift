@@ -1,12 +1,23 @@
 import UIKit
 
-var a: Int?
-a = 1
-
-if let result = a {
-    print("value is \(result)")
-} else {
-    print("not exsit")
+struct NewsFeedItem {
+    enum Kind {
+        case a
+        case b
+        case c
+    }
+    
+    let id: Int
+    let title: String
+    let type: Kind
 }
 
-print("end")
+let type = NewsFeedItem.Kind.a
+let item = (id: 1, title: "Table", type: type)
+
+switch item.type {
+case .a:
+    print("a")
+default:
+    print("another")
+}
